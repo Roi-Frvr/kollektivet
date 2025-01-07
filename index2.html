@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body
+ {font-family: "impact", charcoal, sans-serif;   
+font-weight: bold;
+margin: 0px;
+} 
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 4px solid #000000;
+  background-color: #8A0808;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: 2px solid #000000;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: "impact", charcoal, sans-serif;
+font-weight: bold; 
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #a3c2c2;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: none ;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90px;
+}
+
+
+
+
+.opacity {
+  opacity:0.6;
+}
+
+
+h1 {
+     font-size: 20px;
+     display: inline-block;
+     }
+
+
+.before img {
+    vertical-align: middle;
+}
+.before:hover img, .before:focus img
+	{ transform: rotate(40deg); } 
+
+
+.animation h1	{
+     font-size: 20px;
+     display: inline-block;
+     }
+	.animation:hover h1, .animation:focus h1 
+{ transform: rotateY(150deg);  }
+.animation:hover img, .animation:focus img
+	{ transform: rotateY(150deg);  }
+
+
+.change  {
+background: red;
+animation-duration: 5s;
+animation-name: test;
+animation-iteration-count: 5;
+ }
+
+@keyframes test {
+	0% {background-color: red;}
+	20% {background-color: orange;}
+	40% {background-color: yellow;}
+	60% {background-color: green;}
+	80% {background-color: blue;}
+	100% {background-color: purple;}
+	}
+
+
+.imgLink { border: none; background: none; }
+.imgLink img
+{
+  height: 594px;
+}
+.imgLink:hover img, .imgLink:focus img
+{
+  height: 614px;
+width: 440px;
+}
+
+</style>
+</head>
+<body>
+
+	<div class="animation">
+	<img src="file:///home/chronos/u-9fd3f3c520daaace3efd39e5d59ccb466e2f35a1/MyFiles/antini.png" width="40" height="40" style="display.inline-block;">
+	<h1> KOLLEKTIVET</h1> 
+	</div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'REKLAM')">REKLAM</button>
+  <button class="tablinks" onclick="openCity(event, 'KUNGAFAMILJEN')">KUNGAFAMILJEN</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Lite smått om oss;)</button>
+  <button class="tablinks" onclick="openCity(event, 'estet')">ARJEPLOGS GRÅSUGGERI</button>
+   <button class="tablinks" onclick="openCity(event, 'anton')">ANTON(SIGMA)</button>
+</div>
+
+<section>
+	<div class="container">
+  <img class="mySlides" src="file:///home/chronos/u-9fd3f3c520daaace3efd39e5d59ccb466e2f35a1/MyFiles/kollektivet.jpg" style="width:100%">
+  <img class="mySlides" src="file:///home/chronos/u-9fd3f3c520daaace3efd39e5d59ccb466e2f35a1/MyFiles/sexigskuggamenkines.png" style="width:100%"> 
+   <img class="mySlides" src="file:///home/chronos/u-9fd3f3c520daaace3efd39e5d59ccb466e2f35a1/MyFiles/cool.jpg" style="width:100%">
+ <hr size="2" color="black">
+	</div>
+</section>
+
+
+<div id="REKLAM" class="tabcontent"> 
+	<div class="contaioner">
+		<div class=opacity>
+	<section>
+		<div class="centered" style="color:white" >REKLAM</div>
+	</section>
+	</div>
+	</div>
+
+  <p>Vi har mycket fint att bjuda på framförallt reklam;).</p>
+ <hr size="2" color="black">
+  <p> 
+
+  <button class="imgLink"> <img src="file:///home/chronos/u-9fd3f3c520daaace3efd39e5d59ccb466e2f35a1/MyFiles/eeeeee.jpg" style="display.inline-block;" width="420" 
+			height="594"> </button>
+  <button class="imgLink"> <img src="file:///home/chronos/u-9fd3f3c520daaace3efd39e5d59ccb466e2f35a1/MyFiles/dlds.jpg" style="display.inline-block;" width="420" 
+			height="594" > </button>
+	<button class="imgLink"> <img src="file:///home/chronos/u-9fd3f3c520daaace3efd39e5d59ccb466e2f35a1/MyFiles/Namnl%C3%B6s.jpg" style="display.inline-block;" width="420" 
+		height="594" > </button>
+  </p>
+ 
+  <hr> 
+ 
+  <p> 
+  <button class="imgLink"> <img src="file:///home/chronos/u-9fd3f3c520daaace3efd39e5d59ccb466e2f35a1/MyFiles/mamma.jpg" style="display.inline-block;" width="420" height="594" > </button>
+  <button class="imgLink"> <img src="file:///home/chronos/u-9fd3f3c520daaace3efd39e5d59ccb466e2f35a1/MyFiles/daddy.jpg" style="display.inline-block;" width="420" height="594" > </button>
+  <button class="imgLink"> <img src="" style="display.inline-block;" width="420" height="594" >   </button>
+</p>
+
+<hr>
+
+<p> 
+<button class="imgLink"> <img src="https://cdn.discordapp.com/attachments/1151796417191489589/1322316901275402301/avegner.png?ex=677117d4&is=676fc654&hm=efa23870e6d1ecc57ebc2eb4c307d29ccf3cb1eb5288156194981587c091829f&" style="display.inline-block;" width="420" height="594" > </button> 
+	<button class="imgLink"> <img src="" style="display.inline-block;" width="420" height="594" > </button>
+	<button class="imgLink"> <img src="" style="display.inline-block;" width="420" height="594" > </button>
+</p>
+	</div>
+
+
+
+<div id="KUNGAFAMILJEN" class="tabcontent">
+
+<div class="contaioner">
+	<div class=opacity>
+        <section>
+                <div class="centered" style="color:white" >KUNGEN</div>
+        </section>
+        </div>
+	</div>
+	<div class="before" style="background-color:#6B4365" >
+		<img src="file:///home/chronos/u-9fd3f3c520daaace3efd39e5d59ccb466e2f35a1/MyFiles/konung.png" width="40" height="40" />
+		<span> <h1 style="fontsize:20;"> <b> <u>KUNGEN</u> </b> </h1> </span>
+</div>
+
+  <hr size="2" color="black">
+
+  <img src="file:///home/chronos/u-9fd3f3c520daaace3efd39e5d59ccb466e2f35a1/MyFiles/jangayuuu.png" width="420" height="594" style="display.inline-block;" />
+<img src="file:///home/chronos/u-9fd3f3c520daaace3efd39e5d59ccb466e2f35a1/MyFiles/jan.jpg"  style="display.inline-block;" width="420" 
+                height="594" > 
+		<img src="file:///home/chronos/u-9fd3f3c520daaace3efd39e5d59ccb466e2f35a1/MyFiles/gay.jpg"  style="display.inline-block;" width="420" 
+                height="594" >
+
+                <p>
+                jag skulle <u><i>döda</i></u> alla jag känner för jan guillo han är så sxig
+                han har till och med kolllare lår en pappa<a href="https://www.marxists.org/svenska/marx/1848/04-d037.htm"target=" blank" >ulf</a> 
+                </p>
+		<hr>
+
+</div>
+
+
+<div id="Tokyo" class="tabcontent">
+
+	<div class="opacity">
+<div class="contaioner">
+        <section>
+                <div class="centered" style="color:white" >Smått om oss</div>
+        </section>
+        </div>
+	</div>
+
+  <h3>Kollektivet</h3>
+  <hr size="2" color="black">
+  <p>Vi gör fuffens.</p>
+   <hr size="2" color="black"> 
+   <p> Vanliga frågor:)</p> 
+   <ul>
+	   <p> <li>Vad är kollektivet? Vi:) </li> </p>
+	   <p> <li>Hur går jag med? Du är redan med:) </li> </p>
+	   <p> <li>Dricker ni blod? Vi är vegiterianer så vi dricker endast mensblod </li> </p><p> <li>Finns teklubben kvar? Vi har dödat den men den finns kvar i våra hjärtan. </li> </p>
+   </ul>
+   <hr size="2" color="black"> 
+    <br>
+
+    
+</div>
+
+
+<div id="estet" class="tabcontent">
+
+	<div class="opacity">
+<div class="contaioner">
+        <section>
+                <div class="centered" style="color:white" >GRÅSSUGERI</div>
+        </section>
+        </div>
+        </div>
+
+	<h3>VI AVLAR GRÅSUGGOR</h3>
+	<hr size=2 color="black">
+
+</div>
+
+
+		<div id="anton" class="tabcontent" >
+	
+			<div class="opacity">
+<div class="contaioner">
+        <section>
+                <div class="centered" style="color:white" >SIGMA</div>
+        </section>
+        </div>
+        </div>	
+
+	<div class="change">
+	<h3> VÅRAN VÄN OCH HEDERMEDLEM I KOLLEKTIVET</h3>
+	<hr size="2px" color="black">
+
+	
+	<audio controls autoplay>
+		<source src="file:///home/chronos/u-9fd3f3c520daaace3efd39e5d59ccb466e2f35a1/MyFiles/Downloads/Bring%20Me%20The%20Horizon%20-%20Can%20You%20Feel%20My%20Heart.mp3" type="audio/mpeg">
+	</audio>
+	<img src="file:///home/chronos/u-9fd3f3c520daaace3efd39e5d59ccb466e2f35a1/MyFiles/Downloads/ANTON(1).pdf.png" width="100%" height="100%">  
+	<hr color="black" size="2">
+	<h3> Av alla människor man kan träffa här i världen är anton definitivt en av dem bästa. Utan dig hade vi förmodligen aldrig haft lika kul som vi har nu. Du är både förstående och hjälpsam, rent av rätt sigma till och med tatriakal. Genuint från djupet av vårt hjärta är vi väldigt tacksamma över dig<3</h3> 
+		</div>
+		</div>
+
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+} 
+
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 10000);
+}
+
+
+
+</script>
+   
+</body>
+</html> 
+
